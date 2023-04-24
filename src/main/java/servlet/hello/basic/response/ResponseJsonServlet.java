@@ -24,7 +24,7 @@ public class ResponseJsonServlet extends HttpServlet {
         helloData.setUsername("kim");
         helloData.setAge(20);
 
-        String result =  objectMapper.writeValueAsString(helloData)
+        String result =  objectMapper.writeValueAsString(helloData);
         resp.getWriter().write(result);
     }
 }
